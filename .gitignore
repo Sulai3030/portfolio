@@ -1,2 +1,0 @@
-sendgrid.env
-.env # This contains secrets, don't store in source control
