@@ -1,37 +1,34 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import './App.css';
-import {Container, Row, Col } from 'reactstrap';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
-import { Jumbotron } from 'reactstrap';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, CardGroup,Button } from 'react';
+import ReactDom from 'react-dom';
+import './App.css';
+import {Container} from 'reactstrap/Container'; 
+import {Row} from 'reactstrap/Row';
 
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
+import {Navbar} from 'reactstrap/Navbar';
+import {NavbarToggler} from 'reactstrap/NavbarToggler';
+import {NavbarBrand} from 'reactstrap/NavbarBrand';
+import {Nav} from 'reactstrap/Nav';
+import {NavItem} from 'reactstrap/NavItem';
+import {NavLink} from 'reactstrap/NavLink';
+import { Jumbotron } from 'react-bootstrap/Jumbotron';
+import { Card } from 'react-bootstrap/Card';
+import { CardImg } from 'react-bootstrap/CardImg'; 
+import {CardText } from 'react-bootstrap/CardContext';
+import { CardBody} from 'react-bootstrap';
+
+
+import { CardGroup } from 'react-bootstrap/CardGroup';
+import { Button } from 'react-bootstrap/Button';
+
+class App extends Component {
   render() {
+    return (
+      <div className="App">
+
+  render()
     return (
       <div>
         <Navbar color="light" light expand="md">
@@ -144,3 +141,9 @@ export default class Example extends React.Component {
               );
             }
 }
+      </div>
+    );
+  }
+}
+
+export default App;
