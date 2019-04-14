@@ -1,146 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ReactDom from 'react-dom';
-import './App.css';
-import {Container} from 'reactstrap/Container'; 
-import {Row} from 'reactstrap/Row';
-
-
-import {Navbar} from 'reactstrap/Navbar';
-import {NavbarToggler} from 'reactstrap/NavbarToggler';
-import {NavbarBrand} from 'reactstrap/NavbarBrand';
-import {Nav} from 'reactstrap/Nav';
-import {NavItem} from 'reactstrap/NavItem';
-import {NavLink} from 'reactstrap/NavLink';
-import { Jumbotron } from 'react-bootstrap/Jumbotron';
-import { Card } from 'react-bootstrap/Card';
-import { CardImg } from 'react-bootstrap/CardImg'; 
-import {CardText } from 'react-bootstrap/CardContext';
-import { CardBody} from 'react-bootstrap';
-
-
-import { CardGroup } from 'react-bootstrap/CardGroup';
-import { Button } from 'react-bootstrap/Button';
+import './index.css';
+import UserInput from './UserInput/UserInput';
+import UserOutput from './UserOutput/UserOutput';
+import TitleBar from './TitleBar/TitleBar';
 
 class App extends Component {
+  state = {
+    username: 'supermax'
+  }
+
+  usernameChangedHandler = (event) => {
+    this.setState({username: event.target.value});
+  }
+
   render() {
     return (
       <div className="App">
-
-  render()
-    return (
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/"></NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="https://www.linkedin.com/in/sulai3030/">LinkedIn</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/Sulai3030">GitHub</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://www.linkedin.com/in/sulai3030/">Projects</NavLink>
-              </NavItem>
-            </Nav>
-            <NavItem>
-                <NavLink href={`mailto:sulai3030@gmail.com?subject=abcdefg&body=body}`}>Contact</NavLink>
-              </NavItem>
-          </Collapse>
-        </Navbar>
-        <Jumbotron fluid>
-          <Container fluid>
-            <h1 className="display-3">Sulai Sivadel</h1>
-            <p className="lead">Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding Boot Camp with experience working in teams. Possesses project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia University Coding Bootcamp where he created projects in HTML5, CSS, JavaScript, and ReactJs. Samples can be found here:<NavLink href="https://sulai3030.github.io/">GitHub</NavLink></p>
-          </Container>
-        </Jumbotron>
-          <CardGroup>
-                <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>RuneSkype</Card.Title>
-                <Card.Text>
-                RuneSkype is our final project for the Columbia Coding Bootcamp. It is the newest and best way for you and your friends to interact while playing your favorite Role Playing Game (RPG).
-
-                Getting Started
-
-                Playing RuneSkype is easy, just download a copy from our homepage or our repo:
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>Beer Near Here</Card.Title>
-                <Card.Text>
-                Beer Near Here is a project to successfully connect discerning beer drinkers in Manhattan with bars in the city that serve the beers that they like. We start with a brief survey that takes in their preferences and matches those answers with the Untappd database. Using this API we can populate a map using the Google Maps API that then lists the locations of bars and taverns that carry the user's beer preference.{' '}
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>The G.O.A.T. Voter App!</Card.Title>
-                <Card.Text>
-                My second group project was the GOAT Voter App. G.O.A.T. Voter is a project created with the intention to get the youth vote informed and participating. Focusing on a mobile platform, our team pulled in info using various APIs to gather helpful voter information such as polling location, voting dates, candidate info, and ballot questions into one place. Now, the average US voter can easily enter their zipcode and find their nearest polling location and its hours. Using various APIs and incumbent webpage info, we were able to bulild an app that aids voters in participating in their civic duty. G.O.A.T. Voter.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-          </CardGroup>;
-          <CardGroup>
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>NYTimes React Search</Card.Title>
-                <Card.Text>
-                The React Search was a project that required us to use ReactJs while creating an app that would scrape data from the New York Times using their API so that an end-user would be able to search for articles from any time period that the New york Times published, say a recipe from the food section and then be able to save that date to their own clipboard.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>MongoScraper Assignment</Card.Title>
-                <Card.Text>
-                The MongoScraper Assignment was an excercise that required us to employ Handlebars, MongoDB, NodeJs and a Heroku backend.{' '}
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>Firebase Assignment</Card.Title>
-                <Card.Text>
-                The Firebase Assignment is a culmination of the first half of our learning utilizing HTML, CSS, JavaScript and Firebase. Also know as the Train Scheduuler assignment we were tasked with using Google's Firebase platform. Firebase allows you to store and sync data across all clients in realtime, and remains available when your app goes offline. The Firebase Realtime Database is a cloud-hosted database. Data is stored as JSON and synchronized in realtime to every connected client.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-          </CardGroup>;
-              </div>
-              );
-            }
-}
+        
+        <ol>
+        <TitleBar />
+        Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding Boot Camp with experience working in teams. Possesses project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia University Coding Bootcamp where he created projects in HTML5, CSS, JavaScript, and React. Samples can be found here: https://sulai3030.github.io/
+        </ol>
+        
+        <UserInput 
+          changed={this.usernameChangedHandler} 
+          currentName={this.state.username} />
+        <UserOutput userName={this.state.username} />
+        <UserOutput userName={this.state.username} />
+        <UserOutput userName="Max" />
       </div>
     );
   }
