@@ -52,6 +52,7 @@ body {
   padding: 60px;
   width: 1300px;
   font-family: 'Lato', sans-serif;
+  color:white;
 }
 .box{
   display:flex;
