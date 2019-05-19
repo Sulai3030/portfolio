@@ -5,7 +5,15 @@ import './App.css';
 import { Jumbotron, Container } from 'reactstrap';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck,CardGroup,
-  CardSubtitle, CardBody,CardHeader, CardFooter, Row, StyleSheet, CardColumns, Table, Col, Form, FormGroup, Label, Input, FormText, Column } from 'reactstrap';
+  CardSubtitle, CardBody,CardHeader, CardFooter, Row, StyleSheet, CardColumns, Table, Col, Form, FormGroup, Label, Input, FormText, Column,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
 
 function App() {
@@ -17,6 +25,12 @@ function App() {
           </p>
         </Container>
     </Jumbotron>
+    <div>
+        <Nav>
+          <NavLink href="https://github.com/Sulai3030" >Github</NavLink> <NavLink href="https://www.linkedin.com/in/sulai3030/">Linkedin</NavLink> <NavLink href="#">Projects</NavLink> <a href={`mailto:${'this.props.sulai3030@gmail.com'}`}>Contact Me
+          </a>
+        </Nav>
+    </div>
     <div class = "box clearfix"><CardGroup>
       <Container>
       <Row>
