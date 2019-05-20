@@ -18,24 +18,22 @@ import { Card, Button, CardImg, CardTitle, CardText, CardDeck,CardGroup,
 
 function App() {
   return (
-    <div className="App"><Jumbotron fluid style={{backgroundColor: '#1fa8cc', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '20px'}}>
+    <div className="App">
+      <Jumbotron fluid style={{backgroundColor: '#6994b3', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '20px'}}>
         <Container fluid>
           <h1 className="display-3"><center>Sulai Sivadel : Web Developer</center></h1>
           <p className="lead"><p>Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding Boot Camp with experience working in teams. Possesses project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia University Coding Bootcamp where he created projects in HTML5, CSS, JavaScript, and React. Samples can be found below.</p>
           </p>
         </Container>
-    </Jumbotron>
+      </Jumbotron>
     <div id ="nav">
-        <Navbar bg="dark" variant="dark">
-          <center><NavLink href="https://github.com/Sulai3030">Github</NavLink> <NavLink href="https://www.linkedin.com/in/sulai3030/">Linkedin</NavLink> <NavLink href="#">Projects</NavLink> <a href={`mailto:${'this.props.sulai3030@gmail.com'}`}>Contact Me
-          </a></center>
+        <Navbar bg="dark" variant="dark" >
+          <center><h2><NavLink href="https://github.com/Sulai3030">Github</NavLink> <NavLink href="https://www.linkedin.com/in/sulai3030/">Linkedin</NavLink> <NavLink href="#">Projects</NavLink> <a href={`mailto:${'this.props.sulai3030@gmail.com'}`}>Contact Me
+          </a></h2></center>
         </Navbar>
         <Navbar bg="light" variant="light">
   </Navbar>
   <Container>
-  <Navbar expand="lg" variant="light" bg="light">
-    <NavbarBrand href="#">Navbar</NavbarBrand>
-  </Navbar>
   </Container>
     </div>
     <div class = "box clearfix"><CardGroup>
@@ -125,7 +123,7 @@ function App() {
               <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>Beer Near Here</h2></CardTitle>
               <CardSubtitle></CardSubtitle>
               <CardText>Beer Near Here is a project to successfully connect discerning beer drinkers in Manhattan with bars in the city that serve the beers that they like. We start with a brief survey that takes in their preferences and matches those answers with the Untappd database. Using this API we can populate a map using the Google Maps API that then lists the locations of bars and taverns that carry the user's beer preference.</CardText>
-              <button>https://github.com/Sulai3030/beerNearHere-1</button>
+              <a href = "https://github.com/Sulai3030/beerNearHere-1"><Button variant="warning">Read More</Button></a>
             </CardBody>
           </Card>
         </Col>

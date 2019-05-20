@@ -5,9 +5,11 @@ body {
 }
 .App {
   text-align: center;
-  background-color:#CCCCA1;
+  background-image: url(./seaPhoto.jpg);
 }
-
+.Logo {
+  background-image: url(./seaPhoto.jpg);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -69,6 +71,15 @@ body {
 }
 .nav{
   float:center;
+  color: #fff;
+  word-spacing:30px
+  
+}
+.nav-link{
+  color:#ffa6a6;
+}
+.a{
+  color:#ffa6a6;
 }
 .container{
   width:650px;
