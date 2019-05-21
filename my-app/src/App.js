@@ -34,7 +34,7 @@ function App() {
           </a></h2></center>
         </Navbar>
         <Navbar bg="light" variant="light">
-  </Navbar>
+   </Navbar>
   <Container>
   </Container>
     </div>
@@ -161,9 +161,8 @@ function App() {
                 <CardSubtitle></CardSubtitle>
                 <CardText>Our goal for this assignment was to create a webpage and dynamically populate a grid with gifs when the user input a search parameter. Using an array as well as jQuery and event handlers I was able to allow a user via an Ajax call to populate the page with appropriate gifs by stipulatinig the rating in the if statement.</CardText>
                 <a href = "https://github.com/Sulai3030/giphyApi"><Button variant="warning">Read More</Button></a>
-
               </CardBody>
-            </Card> 
+            </Card>
         </Row>
       </Col>
       </div>

@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: deeppink;
 }
 
 .App {
@@ -39,6 +39,7 @@ body {
 .card-header{
   color:deeppink;
   font-size: 2em;
+
 }
 .card-body{
   height:300px;
@@ -72,15 +73,22 @@ body {
 .nav{
   float:center;
   color: #fff;
-  word-spacing:30px
+  word-spacing:100px;
   
 }
 .nav-link{
   color:#ffa6a6;
+
 }
 .a{
   color:#ffa6a6;
 }
 .container{
   width:650px;
+}
+.display-3{
+  color:#ffa6a6;
+}
+.h2{
+  color:#ffa6a6;
 }
