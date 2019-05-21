@@ -30,7 +30,7 @@ function App() {
       </Jumbotron>
     <div id ="nav">
         <Navbar bg="dark" variant="dark" >
-          <center><h2><NavLink href="https://github.com/Sulai3030">Github</NavLink> <NavLink href="https://www.linkedin.com/in/sulai3030/">Linkedin</NavLink> <NavLink href="#">Projects</NavLink> <a href={`mailto:${'this.props.sulai3030@gmail.com'}`}>Contact Me
+          <center><h2><NavLink href="https://github.com/Sulai3030">Github</NavLink> <span></span><NavLink href="https://www.linkedin.com/in/sulai3030/">Linkedin</NavLink> <NavLink href="#">Projects</NavLink> <a href={`mailto:${'this.props.sulai3030@gmail.com'}`}>Contact Me
           </a></h2></center>
         </Navbar>
         <Navbar bg="light" variant="light">
