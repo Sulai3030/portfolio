@@ -44,7 +44,7 @@ function App() {
         <Col sm={4}>
           <Card>
             <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-            <CardBody body inverse style ={{ backgroundColor: '#B3B15B', borderColor: '#800',color:'#FFF', padding: '20px' }}>
+            <CardBody body inverse style ={{ backgroundColor: '#B3B15B', borderColor: '#800',color:'#FFF', padding: '10px' }}>
               <CardTitle body inverse style={{color:'#FFA6A6', width:'250px', border:'50px'}}><h2>RuneSkype</h2></CardTitle>
               <CardSubtitle></CardSubtitle>
               <CardText>RuneSkype is our final project for the Columbia Coding Bootcamp. It is the newest and best way for you and your friends to interact while playing your favorite Role Playing Game (RPG).
@@ -60,12 +60,23 @@ function App() {
               <CardBody body inverse style={{ backgroundColor: '#B3B15B', borderColor: '#800',color:'#FFF', padding: '20px'}}>
                 <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>The G.O.A.T. Voter App!</h2></CardTitle>
                 <CardSubtitle></CardSubtitle>
-                <CardText>My second group project was the GOAT Voter App. G.O.A.T. Voter is a project created with the intention to get the youth vote informed and participating. Focusing on a mobile platform, our team pulled in info using various APIs to gather helpful voter information such as polling location, voting dates, candidate info, and ballot questions into one place. Now, the average US voter can easily enter their zipcode and find their nearest polling location and its hours. Using various APIs and incumbent webpage info, we were able to bulild an app that aids voters in participating in their civic duty. G.O.A.T. Voter.</CardText>
+                <CardText>The G.O.A.T. Voter App is a project created with the intention to get the youth vote informed and participating. Focusing on a mobile platform, our team pulled in info using various APIs to gather helpful voter information such as polling location, voting dates, candidate info, and ballot questions into one place. Now, the average US voter can easily enter their zipcode and find their nearest polling location and its hours. Using various APIs and incumbent webpage info, we were able to bulild an app that aids voters in participating in their civic duty. G.O.A.T. Voter.</CardText>
                 <a href = "https://github.com/Sulai3030/GOAT-voter"><Button variant="warning">Read More</Button></a>
               </CardBody>
             </Card>      
         </Col>
-        
+        <Col flexGrow={1} horizontal="center">
+            <span> <Col sm={4}>
+          <Card>    
+            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
+            <CardBody body inverse style={{ backgroundColor: '#B3B15B', borderColor: '#800',color:'#FFF', padding: '20px', fontfamily: 'Roboto'}}>
+              <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>Beer Near Here</h2></CardTitle>
+              <CardSubtitle></CardSubtitle>
+              <CardText>Beer Near Here is a project to successfully connect discerning beer drinkers in Manhattan with bars in the city that serve the beers that they like. We start with a brief survey that takes in their preferences and matches those answers with the Untappd database. Using this API we can populate a map using the Google Maps API that then lists the locations of bars and taverns that carry the user's beer preference.</CardText>
+              <a href = "https://github.com/Sulai3030/beerNearHere-1"><Button variant="warning">Read More</Button></a>
+            </CardBody>
+          </Card>
+        </Col>
         <Col sm={4}>  
             <Card>
               <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
@@ -99,19 +110,7 @@ function App() {
                 <Button>Read More</Button>
               </CardBody>
             </Card>
-            <Form>
-        <FormGroup>
-          <Label for="exampleEmail">Contact Us</Label>
-          <Input type="email" name="email" id="exampleEmail" placeholder="Enter Your Email" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleText">Leave Us a Message!</Label>
-          <Input type="textarea" name="text" id="exampleText" />
-        </FormGroup>
-        <FormGroup>
-        </FormGroup>
-        <Button>Submit</Button>
-      </Form>
+            
       </Row>
       </Container>
       </CardGroup>

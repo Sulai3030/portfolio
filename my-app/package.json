@@ -12,7 +12,10 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.6",
     "react-native": "^0.59.8",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
+    "reactstrap": "^8.0.0",
+    "typeface-roboto": "0.0.54",
     "typescript": "^3.4.5"
   },
   "scripts": {
@@ -38,4 +41,3 @@
     "homepage": "https://sulaisivadel.herokuapp.com/"
   }
 }
-  
