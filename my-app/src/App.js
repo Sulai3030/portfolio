@@ -1,21 +1,13 @@
 import React from 'react';
-import './App.css';
-import logo from './logo.svg';
 import Radium from 'radium'
 import './App.css';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import './App.css';
+import {BrowserRouter as Router} from "react-router-dom";
 import { Jumbotron, Container } from 'reactstrap';
-import { Nav, NavItem, NavLink } from 'reactstrap';
-import { Card, Button, CardImg, CardTitle, CardText, CardDeck,CardGroup,
-  CardSubtitle, CardBody,CardHeader, CardFooter, Row, StyleSheet, CardColumns, Table, Col, Form, FormGroup, Label, Input, FormText, Column,
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem, FormControl } from 'reactstrap';
+import { NavLink } from 'reactstrap';
+import { Card, Button, CardImg, CardTitle, CardText, CardGroup,
+  CardSubtitle, CardBody, Row, Col, Navbar } 
+  from 'reactstrap';
   
 
 
@@ -23,7 +15,8 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Jumbotron fluid style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px', width:'90%'}}>
+      
+      <Jumbotron fluid style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
         <Container fluid>
           <h1 className="display-3"><center>Sulai Sivadel : Web Developer</center></h1>
           <p className="lead"><p>Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding Boot Camp with experience working in teams. Possesses project management experience and experience delegating responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia University Coding Bootcamp where he created projects in HTML5, CSS, JavaScript, and React. Samples can be found below.</p>
@@ -33,12 +26,13 @@ function App() {
     <div id ="nav">
         <Navbar bg="dark" variant="dark" >
           <center> 
-            <h2><NavLink href="https://github.com/Sulai3030"><img src={ require('./gitHubMarkLogo.png') } alt= "logo"/>Github</NavLink> <span></span><NavLink href="https://www.linkedin.com/in/sulai3030/"><img src={ require('./iconfinder_linkedin_28298.png') } alt= "logo"/>Linkedin</NavLink> <NavLink href="#">Projects</NavLink> <a href={`mailto:${'this.props.sulai3030@gmail.com'}`}><img src={ require('./icons8-email-50.png') } alt= "logo"/>Contact Me
-          </a></h2></center>
-          
+            <h2><NavLink href="https://github.com/Sulai3030"><img src={ require('./gitHubMarkLogo.png') } alt= "Githib logo"/></NavLink> 
+            <span></span><NavLink href="https://www.linkedin.com/in/sulai3030/"><img src={ require('./iconfinder_linkedin_28298.png') } alt= "logo"/>Linkedin</NavLink>
+             <NavLink href="#"></NavLink> 
+             <a href={`mailto:${'this.props.sulai3030@gmail.com'}`}><img src={ require('./icons8-email-502.png') } alt= "logo"/>Contact Me
+            </a></h2>
+          </center>
         </Navbar>
-        <Navbar bg="light" variant="light">
-   </Navbar>
    <Container>
     <div>
       <CardGroup>
@@ -47,8 +41,7 @@ function App() {
         <Col sm={4}>
           <Card>
             <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-            <CardBody body inverse style ={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '20px',        
-                      position:'absolute', width:'40%' }}>
+            <CardBody body inverse style ={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
               <CardTitle body inverse style={{color:'#FFA6A6', width:'200px', border:'50px'}}><h2>RuneSkype</h2></CardTitle>
               <CardSubtitle></CardSubtitle>
               <CardText>RuneSkype is our final project for the Columbia Coding Bootcamp. It is the newest and best way for you and your friends to interact while playing your favorite Role Playing Game (RPG).
@@ -61,7 +54,7 @@ function App() {
         <Col sm={4}>  
             <Card>
               <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-              <CardBody body inverse style={{ backgroundColor: '#193242', borderColor: '#800',color:'#FFF', padding: '20px'}}>
+              <CardBody body inverse style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
                 <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>The G.O.A.T. Voter App!</h2></CardTitle>
                 <CardSubtitle></CardSubtitle>
                 <CardText>The G.O.A.T. Voter App is a project created with the intention to get the youth vote informed and participating. Focusing on a mobile platform, our team pulled in info using various APIs to gather helpful voter information such as polling location, voting dates, candidate info, and ballot questions into one place. Now, the average US voter can easily enter their zipcode and find their nearest polling location and its hours. Using various APIs and incumbent webpage info, we were able to bulild an app that aids voters in participating in their civic duty. G.O.A.T. Voter.</CardText>
@@ -73,7 +66,7 @@ function App() {
             <span> <Col sm={4}>
           <Card>    
             <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-            <CardBody body inverse style={{ backgroundColor: '#193242', borderColor: '#800',color:'#FFF', padding: '20px', fontfamily: 'Roboto'}}>
+            <CardBody body inverse style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
               <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>Beer Near Here</h2></CardTitle>
               <CardSubtitle></CardSubtitle>
               <CardText>Beer Near Here is a project to successfully connect discerning beer drinkers in Manhattan with bars in the city that serve the beers that they like. We start with a brief survey that takes in their preferences and matches those answers with the Untappd database. Using this API we can populate a map using the Google Maps API that then lists the locations of bars and taverns that carry the user's beer preference.</CardText>
@@ -84,7 +77,7 @@ function App() {
         <Col sm={4}>  
             <Card>
               <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-              <CardBody body inverse style={{ backgroundColor: '#193242', borderColor: '#800',color:'#FFF', padding: '20px'}}>
+              <CardBody body inverse style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
                 <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>NYT React Excercise</h2></CardTitle>
                 <CardSubtitle></CardSubtitle>
                 <CardText>The React Search was a project that required us to use ReactJs while creating an app that would scrape data from the New York Times using their API so that an end-user would be able to search for articles from any time period that the New york Times published, say a recipe from the food section and then be able to save that date to their own clipboard.</CardText>
@@ -95,7 +88,7 @@ function App() {
         <Col sm={4}>  
             <Card>
               <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-              <CardBody body inverse style={{ backgroundColor: '#193242', borderColor: '#800',color:'#FFF', padding: '20px'}}>
+              <CardBody body inverse style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
                 <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>Mongo Scraper</h2></CardTitle>
                 <CardSubtitle></CardSubtitle>
                 <CardText>The MongoScraper Assignment was an excercise that required us to employ Handlebars, MongoDB, NodeJs and a Heroku backend.</CardText>
@@ -106,7 +99,7 @@ function App() {
         <Col sm={4}>  
             <Card>
               <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-              <CardBody body inverse style={{ backgroundColor: '#193242', borderColor: '#800',color:'#FFF', padding: '20px'}}>
+              <CardBody body inverse style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
                 <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>Firebase Assignment</h2></CardTitle>
                 <CardSubtitle></CardSubtitle>
                 <CardText>The Firebase Assignment is a culmination of the first half of our learning utilizing HTML, CSS, JavaScript and Firebase. Also know as the Train Scheduuler assignment we were tasked with using Google's Firebase platform. Firebase allows you to store and sync data across all clients in realtime, and remains available when your app goes offline. The Firebase Realtime Database is a cloud-hosted database. Data is stored as JSON and synchronized in realtime to every connected client.
@@ -118,7 +111,7 @@ function App() {
         <Col sm={4}>  
             <Card>
               <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-              <CardBody body inverse style={{ backgroundColor: '#193242', borderColor: '#800',color:'#FFF', padding: '20px'}}>
+              <CardBody body inverse style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
                 <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>LIRI Bot Excercise</h2></CardTitle>
                 <CardSubtitle></CardSubtitle>
                 <CardText>The LIRI Bot excercise is an assignment where we employed LIRI or Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in paramares and returns data. In this case it takes in parameters from both the Twitter and Spotify apps and interpolates that data and returns data to the user.
@@ -128,7 +121,7 @@ function App() {
             </Card> 
             <Card>
               <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-              <CardBody body inverse style={{ backgroundColor: '#193242', borderColor: '#800',color:'#FFF', padding: '20px'}}>
+              <CardBody body inverse style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
                 <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>Giphy API Assignment</h2></CardTitle>
                 <CardSubtitle></CardSubtitle>
                 <CardText>Our goal for this assignment was to create a webpage and dynamically populate a grid with gifs when the user input a search parameter. Using an array as well as jQuery and event handlers I was able to allow a user via an Ajax call to populate the page with appropriate gifs by stipulatinig the rating in the if statement.</CardText>
@@ -138,7 +131,7 @@ function App() {
         </Col>
             <Card>
               <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-              <CardBody body inverse style={{ backgroundColor: '#193242', borderColor: '#800',color:'#FFF', padding: '20px'}}>
+              <CardBody body inverse style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
                 <CardTitle body inverse style={{color:'#FFA6A6'}}><h1>My Old Blog</h1></CardTitle>
                 <CardSubtitle></CardSubtitle>
                 <CardText>My old blog, Dante Calabria's Sox was dedicated to film review and dissection. It was named after Dante Calbia, a player on the University of North Carolina Tar Heels basketball team who was noted for not wearing socks while he played. I was a professional writer of sustainable food recipes, TV and Film Reviews, as well as educational and Technical Writing. Samples of which can be found HERE</CardText>
@@ -148,12 +141,12 @@ function App() {
         <Col sm={4}>  
             <Card>
               <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="" />
-              <CardBody body inverse style={{ backgroundColor: '#193242', borderColor: '#800',color:'#FFF', padding: '20px'}}>
+              <CardBody body inverse style={{backgroundColor: '#193242', color:'#FFF', textAlign: 'left', textWidth:'80%', textPadding:'50px', padding: '30px'}}>
                 <CardTitle body inverse style={{color:'#FFA6A6'}}><h2>NYT React Excercise</h2></CardTitle>
                 <CardSubtitle></CardSubtitle>
                 <CardText>The React Search was a project that required us to use ReactJs while creating an app that would scrape data from the New York Times using their API so that an end-user would be able to search for articles from any time period that the New york Times published, say a recipe from the food section and then be able to save that date to their own clipboard.</CardText>
                 <a href = "https://github.com/Sulai3030/react-nytimes"><Button variant="warning">Read More</Button></a>
-              </CardBody>
+               </CardBody>
             </Card>      
         </Col>
       </span>

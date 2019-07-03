@@ -1,6 +1,9 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "engines": {
+    "node": "10.3.0"
+  },
   "private": true,
   "dependencies": {
     "acorn": "^6.1.1",
@@ -40,5 +43,6 @@
       "last 1 safari version"
     ],
     "homepage": "https://sulaisivadel.herokuapp.com/"
-  }
+    ],
+  },
 }
