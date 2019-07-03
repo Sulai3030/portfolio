@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "engines": {
     "node": "10.3.0"
-  },
+  }
   "private": true,
   "dependencies": {
     "acorn": "^6.1.1",
@@ -45,4 +45,5 @@
     "homepage": "https://sulaisivadel.herokuapp.com/"
     ],
   },
+  }
 }
