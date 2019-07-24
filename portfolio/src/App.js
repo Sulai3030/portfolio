@@ -9,18 +9,20 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 
 
+
 function App() {
   return (
     <div className="App">
       <div className="mui-container-fluid">
-        <Panel style={{backgroundColor: '#44718e' }}>
+        <Panel style={{backgroundColor: '#2C4E66' }}>
           <div className="mui--text-white mui--text-display3" >Sulai Sivadel
             
           </div>
             <div className="mui--text-white   mui--text-display2">Web Developer  
             </div>
           <div className="mui--text-light mui--text-left mui--text-body2">
-            Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding  Boot Camp with experience working in teams. Possesses project management experience and experience delegating  responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of  a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is   adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia  University Coding Bootcamp where he ceated projects in HTML5, CSS, JavaScript, and Ract.
+            Ambitious, user-focused Full Stack Web Developer recently graduated from Columbia University Coding  Boot Camp with experience working in teams. Possesses project management experience and experience delegating  responsibilities to a team from time at Maximus where he spearheaded a project to create the audio/ADA compliant portion of  a new healthcare plan for the disabled distributed in the state of New York. Sulai is flexible and a quick learner. Sulai is   adaptable, communicative, knowledgeable and steadfast with excellent computer engineering skills learned in the Columbia +
+             University Coding Bootcamp where he ceated projects in HTML5, CSS, JavaScript, and Ract.
           </div>
         </Panel>
         &emsp;
@@ -29,7 +31,9 @@ function App() {
             <a href="https://www.linkedin.com/in/sulai3030/"><Button variant="raised" color="primary">LinkedIn</Button></a>
 
 
-            <a href={`mailto:${'sulai3030@gmail.com'}`}> <Button variant="raised" color="primary">Contact Me</Button>{' '}</a>
+            <Button variant="raised" color="primary">
+                    Contact Me!                   
+           </Button>{' '}
 
             <Container fluid={true}>
         <Row>
