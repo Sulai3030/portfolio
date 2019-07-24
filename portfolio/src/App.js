@@ -24,9 +24,13 @@ function App() {
           </div>
         </Panel>
         &emsp;
-            <Button size= "large" color="primary" ><a href="https://github.com/Sulai3030">Github</a></Button> 
-            <Button size= "large" color="primary"><a href="https://www.linkedin.com/in/sulai3030/">LinkedIn</a></Button>
-            <Button size= "large" color="primary" style={{color: '#fff'}}><a href={`mailto:${'sulai3030@gmail.com'}`}> Contact Me</a></Button>{' '}
+        <a href="https://github.com/Sulai3030"><Button variant="raised" color="primary">Github</Button> </a>
+
+            <a href="https://www.linkedin.com/in/sulai3030/"><Button variant="raised" color="primary">LinkedIn</Button></a>
+
+
+            <a href={`mailto:${'sulai3030@gmail.com'}`}> <Button variant="raised" color="primary">Contact Me</Button>{' '}</a>
+
             <Container fluid={true}>
         <Row>
           <Col md={6}>
